@@ -15,16 +15,15 @@ import { HelloWorldResolver } from "./resolvers/HelloWorldResolver";
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [HelloWorldResolver],
-      validate: true
+      resolvers: [HelloWorldResolver]
     }),
     context: ({ req, res }) => ({ req, res })
   });
 
   await apolloServer.start();
   apolloServer.applyMiddleware({ app, cors: false });
-  const port = process.env.PORT || 4000;
-  app.listen(port, () => {
-    console.log(`server started at http://localhost:${port}/graphql`);
+
+  app.listen(4000, () => {
+    console.log("express server started");
   });
 })();
