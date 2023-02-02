@@ -105,3 +105,10 @@ dist
 
 #anoying macos shit
 .DS_Store
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+.env.development
+.env.local
