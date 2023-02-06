@@ -16,7 +16,7 @@
     "reflect-metadata": "0.1.10",
     "sqlite3": "^5.1.4",
     "type-graphql": "0.17.5",
-    "typeorm": "^0.2.20"
+    "typeorm": "^0.3.11"
   },
   "scripts": {
     "start": "nodemon --exec ts-node src/index.ts",
